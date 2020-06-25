@@ -184,7 +184,7 @@ def get_result(correct_chunks, true_chunks, pred_chunks,
         return res
 
     # print overall performance, and performance per chunk type
-    print('\n{} / {} = {}\n'.format(sum_correct_counts, sum_true_counts, 100*sum_correct_counts/sum_true_counts))
+    # print('\n{} / {} = {}\n'.format(sum_correct_counts, sum_true_counts, 100*sum_correct_counts/sum_true_counts))
     
     print("processed %i tokens with %i phrases; " % (sum_true_counts, sum_true_chunks), end='')
     print("found: %i phrases; correct: %i.\n" % (sum_pred_chunks, sum_correct_chunks), end='')
